@@ -1,4 +1,4 @@
-function formatDate(timestamp) {
+function dateCalculator(timestamp) {
   //calculate the date
   let date = new Date(timestamp);
   let hours = date.getHours();
@@ -90,7 +90,7 @@ function displayTemperarure(response) {
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
-  dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  dateElement.innerHTML = dateCalculator(response.data.dt * 1000);
   windElement.innerHTML = Math.round(response.data.wind.speed);
   humidityElement.innerHTML = response.data.main.humidity;
   descriptionElement.innerHTML = response.data.weather[0].description;

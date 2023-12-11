@@ -23,11 +23,6 @@ ul {
 
 li {
   list-style: none;
-  margin: 0;
-  padding: 0;
-  color: ##6aa6d6;
-  font-size: 16px;
-  line-height: 19px;
 }
 
 li::first-letter {
@@ -99,7 +94,7 @@ small {
 
 .weather-forecast-temperature-min {
   opacity: 0.6;
-  color: ##df6ca0;
+  color: #df6ca0;
 }
 
 .weather-forecast-temperatures {
